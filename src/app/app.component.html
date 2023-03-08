@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<div class="container">
+  <form>
+    numero 1: <input type="number" [(ngModel)]="numero1" name="numero1"><br><br>
+    numero 2: <input type="number" [(ngModel)]="numero2" name="numero2"><br><br>
+    <input class="btn btn-primary" type="submit" value="sumar" (click)="suma()">
+    <input class="btn btn-primary" type="submit" value="restar" (click)="resta()">
+    <input class="btn btn-primary" type="submit" value="multiplicar" (click)="multiplicar()">
+    <input class="btn btn-primary" type="submit" value="dividir" (click)="dividir()">
+  </form>
+</div>
+<p>Resultado: {{resultado}}</p>
